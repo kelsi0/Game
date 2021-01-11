@@ -1,107 +1,169 @@
-# phil welsby - 9 jan 2021
-# scrolling opening credits
-# sources for sys (https://docs.python.org/3/library/sys.html)
-# import modules
-# use of [from time import sleep] imports just the sleep bit from time
-# hence the use of sleep(0.03) and not time.sleep(0.03)
-# also notice that the value of sleep is a float.
 from time import sleep
 import sys
-# this is a for loop
-# the use of triple quotes allows you to print on multiple lines
-for each_letter in '''
-These are the opening credits-
-Welcome NOT GOT A NAME FOR THE GAME YET
-BUT TEAM  4 RULE!!!!\n
-Be Afraid
-Be Very Afraid\n
-''':
-    # this is the bit that does the scrolling of text on the screen
-    sys.stdout.write(each_letter)
-#    sys.stdout.flush()
-    sleep(0.03)
-for a in '''
-George`
-Mika
-Kelsey-Team Leader
-Phil
-Fahad\n''':
-    sys.stdout.write(a)
-    sys.stdout.flush()
-    sleep(0.03)
-sleep(3)
-for a in '''
-Oh! and Jay.... But he may be late haha
-[soz dude couldn\'t resist.]\n''':
-    sys.stdout.write(a)
-    sys.stdout.flush()
-    sleep(0.03)
-### first attempt a t writing a text based game
-### phi welsby - 9 jan 2021
-##
-import sys
-from time import sleep
-# plan of house
-plan = '''
-  ---------------------------------------------------------------------------------
-  |                                        |                                      |
-  |                                        |                                      |
-  |                                        |                                      |
-  |                                        |                                      |
-  |                                        |                                      |
-  |             Kitchen                    |           Living Room
-  |                                        |
-  |
-  |                                                                               |
-  |                                                                               |
-  |                                        |                                      |
-  |----------------------------------------|------------------------------        |
-  |                                        |                                      |
-  |                                                                               |
-  |                                                                               |
-  |                    Study               |            Library                   |
-  |                                        |                                      |
-  |                                        |                                      |
-  |                                        |                                      |
-  ---------------------------------------------------------------------------------
-'''
-# opening credits
-for a in '''
-You are outside the old haunted house of the Scroggins family
-All are now dead but legend has it that their spirits remain
-and anyone who enters will be cursed for all eternity.
-The door is open and is to your left, Do you dare to enter?
-\n
-Be Afraid
-Be Very Afraid\n
-''':
-   sys.stdout.write(a)
-   sys.stdout.flush()
-   sleep(0.03)
-def start_game():
-    try:
-        enter = input('Do you dare enter? ')
-        enter = enter.lower()
-        if enter == 'y' or enter == 'yes':
-            enter_house()
-        elif enter == 'n' or enter == 'no':
-            for a in '''If you don't want to enter why did you say you wanted to play the game...Goodbye\n''':
-                   sys.stdout.write(a)
-                   sys.stdout.flush()
-                   sleep(0.03)
-        else:
-            print('You need to answer yes or no')
-            start_game()
-    except ValueError:
-            print('Game has Crashed')
-def enter_house():
-   print(plan)
-   for a in '''
-You are in the living room, the Library is South the Kitchen is West which way do you wish to go?
-Your choices are S W and E. Which way would you like to go? ''':
-        sys.stdout.write(a)
+
+# function which asks a question
+def question_16(question, correct_answer, wrong_answer, expected_ans):
+
+    for i in question:
+
+        sys.stdout.write(i)
         sys.stdout.flush()
         sleep(0.03)
-start_game()
-input()
-print('That\s all folks!!')
+
+    ans = input('\n\nEnter your answer here :') # get answer from contestant
+    ans = ans.lower()
+    if ans == expected_ans:          # NOTE this line matches the correct answer in the question
+        for i in correct_answer: # run if answer is correct
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+    else:
+        for i in wrong_answer:  # run if answer is wrong
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+
+question_16('''
+What was William Shakespeare's last play called?
+
+A)The Tempest                  B)A Midsummer Night's Dream
+
+C)Romeo and Juliet             D)As you like it
+''','''
+Correct - Legend has it that this is the first of two plays Shakespeare wrote for a mysterious figure that gifted him his powers of writing.
+''','''
+Wrong!  Perhaps you should reaquaint yourself with the Bard from Stratford upon Avon.
+''',
+'''a''')
+def question_17(question, correct_answer, wrong_answer, expected_ans):
+    for i in question:
+
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        sleep(0.03)
+
+    ans = input('\n\nEnter your answer here :') # get answer from contestant
+    ans = ans.lower()
+    if ans == expected_ans:        # NOTE this line matches the correct answer in the question
+        for i in correct_answer: # run if answer is correct
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+    else:
+        for i in wrong_answer:  # run if answer is wrong
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+
+question_17('''
+What is the primary reason Millennials are unable to buy houses?
+
+A)Poor economic management and policy decision making from the previous generation                B)Corporate greed
+
+C)Avocados            D)The free market
+''','''
+Correct - Poor money management and lack of get up and go is the reason that many in the 'Millennial' generation are unable to afford houses. Other reasons include: cereal cafes, inability to open a can of beans, being a snowflake and not working as hard as the previous generation, apparently.
+''','''
+Wrong! Back to the Northern Quarter with you. 
+'''
+,'''c''')
+
+def question_18(question, correct_answer, wrong_answer, expected_ans):
+    for i in question:
+
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        sleep(0.03)
+
+    ans = input('\n\nEnter your answer here :') # get answer from contestant
+    ans = ans.lower()
+    if ans == expected_ans:         # NOTE this line matches the correct answer in the question
+        for i in correct_answer: # run if answer is correct
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+    else:
+        for i in wrong_answer:  # run if answer is wrong
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+
+question_18('''
+Which of the following video game franchises is the brain child of the famous director Hideo Kojima?
+
+A)Plastic Wrench Liquid  B)Metal Gear Solid
+
+C)Call of Duty           D)Shout of Obligation
+''','''
+Correct - Despite it's convoluted story and awkward name. Metal Gear Solid remains the defining franchise of the stealth genre.
+''','''
+Snake what happened? Snake? SSSSSSNNNNNNNNAAAAAAAAAAAAAAAAAAKKKKKKKKKKKKKKKKKKEEEEEEEEEE!
+'''
+,'''b''')
+
+def question_19(question, correct_answer, wrong_answer, expected_ans):
+    for i in question:
+
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        sleep(0.03)
+
+    ans = input('\n\nEnter your answer here :') # get answer from contestant
+    ans = ans.lower()
+    if ans == expected_ans:         # NOTE this line matches the correct answer in the question
+        for i in correct_answer: # run if answer is correct
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+    else:
+        for i in wrong_answer:  # run if answer is wrong
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+
+question_19('''
+Which of the following US Presidents suffered from extreme stage fright?
+
+A)Alexander Hamilton     B)Abraham Lincoln
+
+C)Thomas Jefferson       D)Ulysses Grant
+''','''
+Correct - Despite his portrayal in the hit musical 'Hamilton' Thomas Jefferson only gave two speeches in his life and even then audiences had to strain to hear him. This was despite kicking ass as the ambassador to France.
+''','''
+I afraid you will never be president, or in the room where it happens.
+'''
+,'''c''')
+
+def question_20(question, correct_answer, wrong_answer, expected_ans):
+    for i in question:
+
+        sys.stdout.write(i)
+        sys.stdout.flush()
+        sleep(0.03)
+
+    ans = input('\n\nEnter your answer here :') # get answer from contestant
+    ans = ans.lower()
+    if ans == expected_ans:       # NOTE this line matches the correct answer in the question
+        for i in correct_answer: # run if answer is correct
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+    else:
+        for i in wrong_answer:  # run if answer is wrong
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            sleep(0.03)
+
+question_20('''
+Recent research suggests that dinosaurs who once ruled the planet has what kind of skin?
+
+
+A)Leathery               B)Smooth
+
+C)Furry                  D)Feathery
+''','''
+Correct - Recent research suggests that dinosaurs, as they were more closely related to birds were feathered. Even the fearsome T-Rex is considered to have had feathers along it's head, neck and tail. The velociraptor was about the size of a chicken and feathered as such. Clever girl...
+''','''
+You have been eaten by a T-Rex.
+'''
+,'''d''')
