@@ -1,4 +1,5 @@
-from random import random
+from random import randint
+import random
 
 list_of_questions = [
     ['''
@@ -250,4 +251,4 @@ def question(pos):
             sys.stdout.flush()
             sleep(0.03)
 
-question(int(random()))
+question(random.randint(0, len(list_of_questions)))
