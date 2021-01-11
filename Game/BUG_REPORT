@@ -1,0 +1,46 @@
+# BUG REPORT ON TESTING questions.py
+# phil welsby - 11 jan 2021
+
+GOT INDEX ERROR LINE 237
+(1)
+python3 questions.py
+Traceback (most recent call last):
+  File "questions.py", line 258, in <module>
+    question(random.randint(0, len(list_of_questions)))
+  File "questions.py", line 237, in question
+    list_of_questions[pos][4] = True
+IndexError: list index out of range
+
+
+# question(random.randint(0, len(list_of_questions)))   
+                                                         
+question(random.randint(0, len(list_of_questions ) -1))  
+
+
+
+ANSWRED QUESTION CORRECT GOT TOLD ANSWER WRONG
+(2)
+Game/Game$ python3 questions.py
+
+QUESTION 0
+    What body parts do northern leopard frogs use to help swallow their prey?
+
+    A)Feet                         B)Eyes
+
+    C)Ears                         D)Nostrils
+
+
+Enter your answer here :c
+
+    Wrong!  Northern leopard frogs use their ears to help swallow their prey.
+
+QUESTION 6
+    What is the primary reason Millennials are unable to buy houses?
+    A)Poor economic management and policy decision making from the previous generation                B)Corporate greed
+    C)Avocados            D)The free market
+    
+
+Enter your answer here :c
+
+    Correct - Poor money management and lack of get up and go is the reason that many in the 'Millennial' generation are unable to afford houses. Other reasons include: cereal cafes, inability to open a can of beans, being a snowflake and not working as hard as the previous generation, apparently.
+
