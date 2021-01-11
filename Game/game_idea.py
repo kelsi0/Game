@@ -1,5 +1,5 @@
 import time
-
+Test 
 def wrong_answer_bedroom():
     time.sleep(1)
     response = input("Shall we explore the hallway next? [Y/N] ")
