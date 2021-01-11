@@ -1,6 +1,8 @@
 # phil welsby - 11 jan 2021
 # function to ask a question
 
+Whoops I broke the code!
+
 from time import sleep
 import sys
 
