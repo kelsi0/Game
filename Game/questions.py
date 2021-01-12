@@ -263,7 +263,8 @@ list_of_questions = [
     first programmers of the Harvard Mark I computer,
     ''','''a''', False],
 
-    ['''What is the longest river in the UK?
+    ['''
+    What is the longest river in the UK?
 
      A) Thames                          B) Severn
 
@@ -274,7 +275,8 @@ list_of_questions = [
     Wrong! The longest river is the Severn.
     ''','''b''',False],
 
-    ['''Which Indian inspired dish is only served in the United Kingdom?
+    ['''
+    Which Indian inspired dish is only served in the United Kingdom?
 
     A) Madras                           B) Chicken Tikka Massala
 
@@ -286,7 +288,8 @@ list_of_questions = [
     ''','''
     b''',False],
 
-    ['''Which mountain is the closest to space?
+    ['''
+    Which mountain is the closest to space?
 
     A) Space Mountain                   B) Mount Everest
     
@@ -297,7 +300,8 @@ list_of_questions = [
     Wrong! The mountain closest to space is Mount Chimborazo.
     ''','''c''',False],
 
-    ['''In January, the Bank of England released a new £20 note with JMW Turner's face on. Who's he?
+    ['''
+    In January, the Bank of England released a new £20 note with JMW Turner's face on. Who's he?
 
     A) A famous painter                 B) The Queen's pastry chef
  
@@ -308,7 +312,8 @@ list_of_questions = [
     Wrong! JMW Turner was a famous painter.
     ''','''a''', False],
 
-    ['''Which of the following is not a country in Europe?
+    ['''
+    Which of the following is not a country in Europe?
 
     A) Albania                          B) Ukraine
    
@@ -349,13 +354,11 @@ def question(pos):
 i = len((list_of_questions)*2)
 random_q = randint(0, (len(list_of_questions)))
 len(list_of_questions)
-while(i > 0 and list_of_questions[random_q][4] == False):
+while(i > 0 and list_of_questions[random_q][4]):
     random_q = randint(0, len(list_of_questions))
     question(random_q)
     i -= 1
     
-
-
-
-#
+for i in range(25):
+    question(random.randint(0, len(list_of_questions)))
 
