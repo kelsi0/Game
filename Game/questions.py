@@ -324,7 +324,7 @@ list_of_questions = [
 
 # function which asks a question
 def question(pos):
-    list_of_questions[pos][4]
+    list_of_questions[pos][4] == True
 # for loop prints question on the screen
     for i in list_of_questions[pos][0]:
 
@@ -349,13 +349,13 @@ def question(pos):
 i = len((list_of_questions)*2)
 random_q = randint(0, (len(list_of_questions)))
 len(list_of_questions)
-while(i > 0 and list_of_questions[random_q][4]):
+while(i > 0 and list_of_questions[random_q][4] == False):
     random_q = randint(0, len(list_of_questions))
     question(random_q)
+    i -= 1
+    
 
 
 
-
-
-question(random.randint(0, len(list_of_questions)))
+#
 
