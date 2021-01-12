@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2021-01-12T10:17:48.719Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="kif_O4nKyoZvG3NnQ49a" version="14.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-12T10:21:50.962Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="3E6EoNRWFQiZmzfoFJ6S" version="14.1.9" type="github">
   <diagram id="4d29W5WxIk8nkYb60he4" name="Page-1">
     <mxGraphModel dx="780" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-11" value="Kelsey" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="570" y="10" width="30" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="GxyA5iGJCojV2aHmeg0h-3" value="&lt;div&gt;No&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="WxqafuSX7poHOOpFGCyM-2" target="GxyA5iGJCojV2aHmeg0h-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -163,6 +166,24 @@
         </mxCell>
         <mxCell id="xVhMD_2vwnMEOMpWQLeE-36" value="if global health == 0&lt;br&gt;print(&quot;GAME OVER&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFF00;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="740" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-1" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#007FFF;" vertex="1" parent="1">
+          <mxGeometry x="530" y="170" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#007FFF;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-3" value="Fahad" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="585" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-4" value="Phil" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="50" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-5" value="George" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="520" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZY41fvJWDuz-y6LnLEf_-6" value="Mika" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
