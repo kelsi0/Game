@@ -329,7 +329,7 @@ list_of_questions = [
 
 # function which asks a question
 def question(pos):
-    list_of_questions[pos][4] == True
+    list_of_questions[pos][4]
 # for loop prints question on the screen
     for i in list_of_questions[pos][0]:
 
@@ -343,12 +343,14 @@ def question(pos):
         for i in list_of_questions[pos][1]: # run if answer is correct
             sys.stdout.write(i)
             sys.stdout.flush()
-            sleep(0.03)
+            sleep(0.03)          
     else:
         for i in list_of_questions[pos][2]:  # run if answer is wrong
             sys.stdout.write(i)
             sys.stdout.flush()
             sleep(0.03)
+            
+
 
 #This will generate the random question
 i = len((list_of_questions)*2)
