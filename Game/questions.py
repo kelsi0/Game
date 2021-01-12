@@ -14,9 +14,9 @@ list_of_questions = [
 
     C)Ears                              D)Nostrils
     ''','''
-    Correct! Northern leopard frogs use their ears to help swallow their prey.
+    Correct! Northern leopard frogs use their eyes to help swallow their prey.
     ''','''
-    Wrong!  Northern leopard frogs use their ears to help swallow their prey.
+    Wrong!  Northern leopard frogs use their eyes to help swallow their prey.
     ''','''b''', False],
 
     ['''What colour is the solid form of oxygen?
@@ -363,4 +363,5 @@ while(i > 0 and list_of_questions[random_q][4]):
     
 for i in range(25):
     question(random.randint(0, len(list_of_questions)))
+
 
