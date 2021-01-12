@@ -13,7 +13,12 @@
 # print("        `.              `.     .     ")
 # print("          `'`'`'`---..,___`;.-'      ")
 
-
+# TGREEN =  '\033[32m' # Green Text
+# print (TGREEN + "This is some green text!")
+TWHITE = '\033[37m'
+OKGREEN = '\033[92m'
+print(TWHITE) 
+# print (TWHITE + "This is some white text!")
 
 # NOTE: Mansion with ghost in background
 print("\n                                            .-.                           ")
@@ -86,7 +91,7 @@ print(" |__________|   |__________|   |__________|   |__________|  ")
 
 
 
-
+print(OKGREEN)
 # NOTE: Ghosts chasing player
 print("\n               .-.            .-.             .-.            .-.             .-.            .-.       ")
 print("             _/@@ \          /aa \_         _/xx \          /aa \_         _/oo \          /^^ \_     ")
