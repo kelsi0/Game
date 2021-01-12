@@ -287,7 +287,7 @@ list_of_questions = [
     b''',False],
 
     ['''Which mountain is the closest to space?
-    
+
     A) Space Mountain                   B) Mount Everest
     
     C) Mount Chimborazo                 D) Mount Harpo
@@ -324,7 +324,7 @@ list_of_questions = [
 
 # function which asks a question
 def question(pos):
-    list_of_questions[pos][4] = True
+    list_of_questions[pos][4]
 # for loop prints question on the screen
     for i in list_of_questions[pos][0]:
 
@@ -352,34 +352,10 @@ len(list_of_questions)
 while(i > 0 and list_of_questions[random_q][4]):
     random_q = randint(0, len(list_of_questions))
     question(random_q)
-    i -= 1
 
 
 
 
 
 question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
-question(random.randint(0, len(list_of_questions)))
+
