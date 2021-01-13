@@ -298,10 +298,13 @@ def question(pos):
 
 
 
+def rand_question():
+        i = len(list_of_questions)*2
+        random_q = random.randint(0,len(list_of_questions)-1)
+        while i > 0 and list_of_questions[random_q][4]:
+                random_q = random.randint(0, len(list_of_questions)-1)
 
-i = len(list_of_questions)*2
-random_q = random.randint(0, len(list_of_questions)-1)
-while i > 0 and list_of_questions[random_q][4]:
-	random_q = random.randint(0, len(list_of_questions)-1)
-
-question(random_q)
+        if list_of_questions[random_q][4]:
+                return -1
+        else:
+                return random_q
